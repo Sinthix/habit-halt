@@ -1,7 +1,7 @@
 <template>
     <header class="header">
-      <div class="header__search">Search...</div>
-      <div class="header__avatar">Something</div>
+      <div class="header__search">Habit Halt</div>
+      <div class="header__avatar">Change your habits</div>
     </header>
 </template>
 
@@ -15,6 +15,7 @@
   justify-content: space-between;
   padding: 0;
   background-color: #394263;
+  padding: 0 16px;
 }
 
 /* Make room for the menu icon on mobile */

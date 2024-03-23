@@ -1,11 +1,10 @@
 <template>
     <aside class="sidenav">
       <ul class="sidenav__list">
-        <list-item listText="item 1"/>
-        <list-item listText="item 2"/>
-        <list-item listText="item 3"/>
-        <list-item listText="item 4"/>
-        <list-item listText="item 5"/>
+        <list-item listText="Meals"/>
+        <list-item listText="Smoke"/>
+        <list-item listText="Studies"/>
+        <list-item listText="Code"/>
       </ul>
     </aside>
 </template>

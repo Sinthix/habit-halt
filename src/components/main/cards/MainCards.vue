@@ -3,6 +3,7 @@
       <card-component cardText="card 1"/>
       <card-component cardText="card 2"/>  
       <card-component cardText="card 3"/>  
+      <card-component cardText="card 4"/>  
     </div>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
    <div class="main-overview">
-        <overview-card overviewText="Meal" cardText="1min"/>
-        <overview-card overviewText="overview 2" cardText="card 2"/>
-        <overview-card overviewText="overview 3" cardText="card 3"/>
-        <overview-card overviewText="overview 4" cardText="card 4"/>
+        <overview-card overviewText="Next Meal" cardText="x min"/>
+        <overview-card overviewText="Next Smoke" cardText="x min"/>
+        <overview-card overviewText="Next Study" cardText="x min"/>
+        <overview-card overviewText="Next Code" cardText="x min"/>
       </div>
 </template>
 
