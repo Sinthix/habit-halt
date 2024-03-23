@@ -1,7 +1,7 @@
 <template>
     <div class="overviewcard">
-        <div class="overviewcard__icon">{{overviewText}}</div>
-        <div class="overviewcard__info">{{cardText}}</div>
+        <div class="overviewcard__icon"><b>Next:</b> {{overviewText}}</div>
+        <div class="overviewcard__info"><b>Time:</b> {{cardText}}</div>
     </div>
 </template>
 

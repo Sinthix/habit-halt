@@ -1,0 +1,18 @@
+## focus on adding meals
+- meals has x amount of meals
+- meal has name 
+- meal has time
+
+
+## Create BE in Python with Flask
+- BE has endpoint to get the next meal
+- FE sends request to get next meal ( sends timenow to BE)
+- BE responds with 
+meals: [
+      {
+        mealName: 'Wakeup water',
+        mealTime: '07:00'
+      },
+]
+
+## FE display next meal in MainOverview.vue in OverviewCard

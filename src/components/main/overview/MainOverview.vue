@@ -1,9 +1,9 @@
 <template>
    <div class="main-overview">
-        <overview-card overviewText="Next Meal" cardText="x min"/>
-        <overview-card overviewText="Next Smoke" cardText="x min"/>
+        <overview-card :overviewText="nextMeal.meal_name" :cardText="nextMeal.meal_time"/>
+        <!-- <overview-card overviewText="Next Smoke" cardText="x min"/>
         <overview-card overviewText="Next Study" cardText="x min"/>
-        <overview-card overviewText="Next Code" cardText="x min"/>
+        <overview-card overviewText="Next Code" cardText="x min"/> -->
       </div>
 </template>
 
@@ -18,15 +18,19 @@
 
 </style>
 
-<script>
+<script setup>
 import OverviewCard from "./OverviewCard.vue"
 
-export default {
-    components: {
-      OverviewCard
-    },
-    computed: {
-     
-  }
-}
+import { onMounted, computed } from "vue";
+import { mealStore } from "@/stores/MealStore.js";
+const store = mealStore();
+
+const nextMeal = computed(() => {
+  console.log(store.nextMeal)
+  if(!store.nextMeal) return 'problem'
+  return store.nextMeal[0];
+});
+onMounted(() => {
+  store.fetchNextMeal();
+});
 </script>

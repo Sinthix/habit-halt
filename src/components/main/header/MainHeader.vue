@@ -1,16 +1,42 @@
 <template>
   <div class="main-header">
-    <div class="main-header__heading">Time Now: {{ timeNow }}</div>
+    <div class="main-header__heading">Time Now: {{ formattedTime }}</div>
   </div>
 </template>
 
-<script setup>
-import { computed } from 'vue'
+<script>
+import { computed, ref, onMounted } from 'vue';
 
-const timeNow = computed(() => {
-  const today = new Date();
-      return today.getHours() + ":" + today.getMinutes()
-})
+export default {
+  setup() {
+    const hours = ref(new Date().getHours());
+    const minutes = ref(new Date().getMinutes());
+
+    // Update the time every second
+    const updateTime = () => {
+      const now = new Date();
+      hours.value = now.getHours();
+      minutes.value = now.getMinutes();
+    };
+
+    // Call updateTime initially and every second thereafter
+    onMounted(() => {
+      updateTime();
+      setInterval(updateTime, 1000);
+    });
+
+    // Computed property to format the time
+    const formattedTime = computed(() => {
+      const paddedHours = String(hours.value).padStart(2, '0');
+      const paddedMinutes = String(minutes.value).padStart(2, '0');
+      return `${paddedHours}:${paddedMinutes}`;
+    });
+
+    return {
+      formattedTime
+    };
+  }
+};
 </script>
 
 <style>
