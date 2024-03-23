@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import SideNav from './SideNav.vue'
-import HeaderComponent from './HeaderComponent.vue'
-import MainComponent from './MainComponent.vue'
-import TheFooter from './TheFooter.vue'
+import SideNav from './sidenav/SideNav.vue'
+import HeaderComponent from './header/HeaderComponent.vue'
+import MainComponent from './main/MainComponent.vue'
+import TheFooter from './footer/TheFooter.vue'
 
 export default {
   components: {

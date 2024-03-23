@@ -1,7 +1,7 @@
 <template>
     <div class="main-header">
-        <div class="main-header__heading">Hello User</div>
-        <div class="main-header__updates">Recent Items</div>
+        <div class="main-header__heading">Check times Below</div>
+        
       </div>
 </template>
 
@@ -11,8 +11,7 @@
   justify-content: space-between;
   margin: 20px;
   padding: 20px;
-  height: 150px;
-  background-color: #e3e4e6;
+  background-color: #9df9ef;
   color: slategray;
 }
 </style>

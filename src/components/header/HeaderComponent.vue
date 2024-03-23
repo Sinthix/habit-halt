@@ -13,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
-  background-color: #648ca6;
+  padding: 0;
+  background-color: #394263;
 }
 
 /* Make room for the menu icon on mobile */

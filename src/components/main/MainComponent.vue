@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import MainHeader from "./MainHeader.vue"
-import MainOverview from "./MainOverview.vue"
-import MainCards from "./MainCards.vue"
+import MainHeader from "./header/MainHeader.vue"
+import MainOverview from "./overview/MainOverview.vue"
+import MainCards from "./cards/MainCards.vue"
 
 export default {
   components: {
@@ -25,7 +25,9 @@ export default {
 
 .main {
   grid-area: main;
-  background-color: #8fd4d9;
+  background-color: #394263;
+
+  margin: 20px;
 }
 
 </style>
