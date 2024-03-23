@@ -1,9 +1,9 @@
 <template>
-    <div class="main-header">
-        <div class="main-header__heading">Time Now: {{ timeNow }}</div>
-        
-      </div>
+  <div class="main-header">
+    <div class="main-header__heading">Time Now: {{ timeNow }}</div>
+  </div>
 </template>
+
 <script setup>
 import { computed } from 'vue'
 
@@ -11,9 +11,7 @@ const timeNow = computed(() => {
   const today = new Date();
       return today.getHours() + ":" + today.getMinutes()
 })
-
 </script>
-
 
 <style>
 .main-header {
