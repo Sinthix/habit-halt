@@ -24,6 +24,9 @@ import OverviewCard from "./OverviewCard.vue"
 export default {
     components: {
       OverviewCard
-    }
+    },
+    computed: {
+     
+  }
 }
 </script>
